@@ -1,0 +1,7 @@
+docker run --name postgres_grpc \
+  -e POSTGRES_USER=temp_username \
+  -e POSTGRES_PASSWORD=temp_password \
+  -e POSTGRES_DB=students_db \
+  -v postgres_data:/var/lib/postgresql/data \
+  -p 5432:5432 \
+  -d postgres:latest
